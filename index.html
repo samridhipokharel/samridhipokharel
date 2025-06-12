@@ -1,11 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samridhi Pokharel | BCA Student & Tech Enthusiast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            scroll-behavior: smooth;
+            font-family: 'Inter', sans-serif;
+        }
+
+
+
+        .gradient-text {
+            background: linear-gradient(90deg, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+    </style>
 </head>
-<body>
-    <h1>hello</h1>
+
+<body class="bg-gradient-to-br from-pink-50 to-purple-50 text-gray-800">
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                    <span class="gradient-text">Hello, I'm</span><br>
+                    <span class="text-gray-800">Samridhi Pokharel</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                    A passionate BCA student and aspiring developer from Nepal, creating digital solutions with
+                    creativity and code.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact"
+                        class="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full font-medium hover:shadow-lg transition-all">
+                        Contact Me
+                    </a>
+                    <a href="#gallery"
+                        class="px-6 py-3 border-2 border-pink-500 text-pink-600 rounded-full font-medium hover:bg-pink-50 transition-all">
+                        View Gallery
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full shadow-xl opacity-20 animate-pulse">
+                    </div>
+                    <img src="/images/WhatsApp Image 2025-06-01 at 11.37.48 (1).jpeg" alt="Samridhi Pokharel"
+                        class="relative w-full h-full object-cover rounded-full border-8 border-white shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white/50 backdrop-blur-sm">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">About Me</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-pink-500 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        I'm a tech enthusiast currently pursuing my Bachelor's in Computer Applications (BCA) at
+                        Tribhuvan University.
+                        My journey in technology began with a curiosity about how digital systems work, and it has grown
+                        into a passion
+                        for creating meaningful solutions through code.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        When I'm not coding, you can find me exploring photography, reading tech blogs, or enjoying a
+                        cup of masala tea
+                        while brainstorming my next project. I believe in continuous learning and pushing boundaries to
+                        create impactful
+                        digital experiences.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-200 transition-colors">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 hover:bg-purple-200 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 card-hover transition-all">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Personal Details</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-calendar-alt text-pink-500 mr-3"></i>
+                            <span class="text-gray-700">Age: 20</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-pink-500 mr-3"></i>
+                            <span class="text-gray-700">Hetauda, Nepal</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-pink-500 mr-3"></i>
+                            <span class="text-gray-700">samridhipokharel7@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-pink-500 mr-3"></i>
+                            <span class="text-gray-700">+977-9800000000</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-heart text-pink-500 mr-3"></i>
+                            <span class="text-gray-700">Photography, Coding, Travel, Digital Marketing</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gradient-to-br from-pink-100 to-purple-100">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">My Skills</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-pink-500 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md flex flex-col items-center card-hover transition-all">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-code text-2xl text-pink-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Web Development</h3>
+                    <p class="text-gray-600 text-sm text-center">HTML, CSS, JavaScript , Node Js , Mongo Db</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md flex flex-col items-center card-hover transition-all">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Digital Marketing</h3>
+                    <p class="text-gray-600 text-sm text-center">Social Media Handling</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md flex flex-col items-center card-hover transition-all">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-pencil-alt text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Content Creation</h3>
+                    <p class="text-gray-600 text-sm text-center">Blog writing, Video editing, Social media management
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md flex flex-col items-center card-hover transition-all">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-camera text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Photography</h3>
+                    <p class="text-gray-600 text-sm text-center">Portrait, Landscape</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Education</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-pink-500 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="relative">
+                <!-- Timeline -->
+                <div class="border-l-2 border-pink-200 absolute h-full left-4 md:left-1/2 -translate-x-1/2"></div>
+
+                <!-- Timeline Item 1 -->
+                <div class="mb-8 md:flex justify-between items-center w-full">
+                    <div class="md:w-5/12 md:pr-8 md:text-right order-1">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Bachelor in Computer Applications</h3>
+                        <p class="text-pink-600 mb-2">2023 - Present</p>
+                        <p class="text-gray-600">Tribhuvan University</p>
+                        <p class="text-gray-500 text-sm">Hetauda City College</p>
+                    </div>
+                    <div
+                        class="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full z-10 mx-auto md:mx-0 order-2 flex items-center justify-center text-white">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="md:w-5/12 order-3"></div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="mb-8 md:flex justify-between items-center w-full">
+                    <div class="md:w-5/12 order-1"></div>
+                    <div
+                        class="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full z-10 mx-auto md:mx-0 order-2 flex items-center justify-center text-white">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="md:w-5/12 md:pl-8 order-3">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">+2 Science</h3>
+                        <p class="text-pink-600 mb-2">2021 - 2023</p>
+                        <p class="text-gray-600">Intermediate Level</p>
+                        <p class="text-gray-500 text-sm">National Examinations Board</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="md:flex justify-between items-center w-full">
+                    <div class="md:w-5/12 md:pr-8 md:text-right order-1">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">School Leaving Certificate</h3>
+                        <p class="text-pink-600 mb-2">2020</p>
+                        <p class="text-gray-600">Primary Level</p>
+                        <p class="text-gray-500 text-sm">National Examinations Board</p>
+                    </div>
+                    <div
+                        class="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full z-10 mx-auto md:mx-0 order-2 flex items-center justify-center text-white">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="md:w-5/12 order-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gradient-to-br from-purple-50 to-pink-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">My Gallery</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-pink-500 to-purple-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Capturing moments of me</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative overflow-hidden rounded-xl shadow-lg gallery-item">
+                    <img src="/images/WhatsApp Image 2025-06-01 at 11.35.55.jpeg" alt="samridhi photo"
+                        class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="relative overflow-hidden rounded-xl shadow-lg gallery-item">
+                    <img src="/images/WhatsApp Image 2025-06-01 at 11.37.48.jpeg" alt="samridhi photo"
+                        class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden rounded-xl shadow-lg gallery-item">
+                    <img src="/images/WhatsApp Image 2025-06-01 at 11.37.48 (2).jpeg" alt="samridhi photo "
+                        class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                    </div>
+                </div>
+
+
+                <div class="relative overflow-hidden rounded-xl shadow-lg gallery-item">
+                    <img src="/images/WhatsApp Image 2025-06-01 at 11.37.48 (1).jpeg" alt="samridhi photo"
+                        class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Get In Touch</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-pink-500 to-purple-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Feel free to reach out for collaborations, questions, or
+                    just to say hello!</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6" action="/">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                            <input type="text" id="name"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                            <textarea id="message" rows="5"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg transition-all">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="flex flex-col justify-center">
+                    <div
+                        class="bg-gradient-to-br from-pink-50 to-purple-50 p-8 rounded-xl shadow-md border border-gray-100">
+                        <h3 class="text-xl font-bold mb-6 text-gray-800">Contact Information</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <div class="bg-pink-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-pink-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-700">Email</h4>
+                                    <a href="mailto:samridhipokharel7@gmail.com"
+                                        class="text-gray-600 hover:text-pink-600">samridhipokharel7@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-700">Phone</h4>
+                                    <a href="tel:+9779800000000"
+                                        class="text-gray-600 hover:text-pink-600">+977-9800000000</a>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-700">Location</h4>
+                                    <p class="text-gray-600">Hetauda, Makwanpur, Nepal</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="mt-8">
+                            <h4 class="font-medium text-gray-700 mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 hover:bg-pink-200 transition-colors">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 hover:bg-blue-200 transition-colors">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 hover:bg-purple-200 transition-colors">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 hover:bg-gray-200 transition-colors">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="bg-gradient-to-r from-purple-900 via-indigo-900 to-blue-900 text-white py-16">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-extrabold mb-4 tracking-wide">Samridhi Pokharel</h2>
+    <p class="text-gray-300 max-w-xl mx-auto mb-8 leading-relaxed">
+      Passionate BCA student exploring technology and creativity with dedication and curiosity.
+    </p>
+    <nav class="mb-8">
+      <ul class="flex justify-center space-x-10 text-gray-300">
+        <li><a href="#about" class="hover:text-pink-400 transition-colors duration-300">About</a></li>
+        <li><a href="#skills" class="hover:text-pink-400 transition-colors duration-300">Skills</a></li>
+        <li><a href="#education" class="hover:text-pink-400 transition-colors duration-300">Education</a></li>
+        <li><a href="#gallery" class="hover:text-pink-400 transition-colors duration-300">Gallery</a></li>
+        <li><a href="#contact" class="hover:text-pink-400 transition-colors duration-300">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="flex justify-center space-x-6 mb-10 text-gray-400">
+      <a href="#" aria-label="Facebook" class="hover:text-pink-400 transition-colors duration-300 text-2xl">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" aria-label="Twitter" class="hover:text-pink-400 transition-colors duration-300 text-2xl">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" aria-label="Instagram" class="hover:text-pink-400 transition-colors duration-300 text-2xl">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" aria-label="LinkedIn" class="hover:text-pink-400 transition-colors duration-300 text-2xl">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <p class="text-gray-400 text-sm select-none">
+      &copy; 2025 Samridhi Pokharel. All rights reserved. Made with
+      <i class="fas fa-heart text-pink-500 animate-pulse"></i> in Nepal
+    </p>
+  </div>
+</footer>
+
+
+    <!-- Back to Top Button -->
+    <a href="#"
+        class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-all">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
 </body>
+
 </html>
